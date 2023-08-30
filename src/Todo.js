@@ -100,6 +100,7 @@ export default function Todo() {
           <tr>
             <th>Title</th>
             <th>Description</th>
+            <th>Completed/Deleted</th>
           </tr>
         </thead>
         <tbody>
