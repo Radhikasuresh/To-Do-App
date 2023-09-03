@@ -39,6 +39,9 @@ export default function Todo() {
   const deleteToDo = (index) => {
     const deletedTodo = todos.filter((item, i) => index !== i);
     setTodos(deletedTodo);
+    if (!deletedTodo.length) {
+      localStorage.setItem("todos", JSON.stringify([]));
+    }
   };
   const completed = (index) => {
     setTodos((prev) => {
